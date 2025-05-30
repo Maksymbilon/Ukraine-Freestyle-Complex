@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Support the future of freestyle skiing in Ukraine. Help us finalize the project of a world-class freestyle ramp." />
+  <title>Support Freestyle Ramp in Ukraine</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .donate {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .wallet {
+      font-family: monospace;
+      word-break: break-word;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin: 2rem 0;
+    }
+    .btn-copy {
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Help Us Build Ukraine's Freestyle Ramp</h1>
+    <p>Be part of a future Olympic dream</p>
+  </header>
+  <section>
+    <p>Hello, my name is <strong>Maksym Bilonizhko</strong>, and together with Olympic Champion <strong>Oleksandr Abramenko</strong>, we started developing a freestyle ski ramp project in Ukraine before the war.</p>
+
+    <p>Now, we are looking ahead — preparing to finish the full technical project and budget, so we can start building right after peace comes back to our country. This ramp will become the foundation for future generations of Ukrainian athletes.</p>
+
+    <p>If you believe in sports, peace, and rebuilding Ukraine, you can support the continuation of this idea. Any form of financial help is welcome — including cryptocurrency.</p>
+
+    <div class="donate">
+      <h3>Crypto Support (TRC-20 USDT)</h3>
+      <p class="wallet" id="wallet">TKyKYS4udQL5NBBCQqtrC3mGQBMfmfEFpa</p>
+      <button class="btn-copy" onclick="copyWallet()">Copy Wallet Address</button>
+    </div>
+
+    <p style="margin-top:2rem;">
+      More info and videos can be found on my YouTube channel <strong>Maksym Bilonizhko</strong> and via this article:
+      <a href="https://mixsport.pro/blog/pidtrimaj-nas-proekt-ta-rozvitok-fristajlu-v-ukraini" target="_blank">Read the article</a>
+    </p>
+  </section>
+  <footer>
+    &copy; 2025 Maksym Bilonizhko. Project for peace, sport, and Ukraine.
+  </footer>
+
+  <script>
+    function copyWallet() {
+      const wallet = document.getElementById("wallet").innerText;
+      navigator.clipboard.writeText(wallet).then(() => {
+        alert("Wallet address copied to clipboard");
+      });
+    }
+  </script>
+</body>
+</html>
