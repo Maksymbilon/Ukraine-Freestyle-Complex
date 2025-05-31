@@ -3,88 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Support the future of freestyle skiing in Ukraine. Help us finalize the project of a world-class freestyle ramp." />
   <title>Support Freestyle Ramp in Ukraine</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #222;
     }
+
     header {
-      background: #004080;
+      background: linear-gradient(135deg, #004080, #007BFF);
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    .donate {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
       margin-top: 2rem;
     }
+
+    .images img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .donate {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+      margin-top: 3rem;
+    }
+
     .wallet {
       font-family: monospace;
+      background: #eee;
+      padding: 1rem;
       word-break: break-word;
+      margin: 1rem 0;
     }
+
+    .donate-btn {
+      background: #28a745;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .donate-btn:hover {
+      background: #218838;
+    }
+
     footer {
       text-align: center;
+      padding: 1rem;
       font-size: 0.9rem;
-      color: #888;
-      margin: 2rem 0;
-    }
-    .btn-copy {
-      margin-top: 0.5rem;
-      padding: 0.4rem 0.8rem;
-      background-color: #004080;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+      color: #777;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Help Us Build Ukraine's Freestyle Ramp</h1>
-    <p>Be part of a future Olympic dream</p>
+    <h1>Support Freestyle Ramp in Ukraine</h1>
+    <p>Together we can build a world-class freestyle complex</p>
   </header>
+
   <section>
-    <p>Hello, my name is <strong>Maksym Bilonizhko</strong>, and together with Olympic Champion <strong>Oleksandr Abramenko</strong>, we started developing a freestyle ski ramp project in Ukraine before the war.</p>
+    <p>This project aims to create a modern freestyle skiing ramp in Ukraine for future champions and Olympic training. Help us make it real!</p>
 
-    <p>Now, we are looking ahead — preparing to finish the full technical project and budget, so we can start building right after peace comes back to our country. This ramp will become the foundation for future generations of Ukrainian athletes.</p>
-
-    <p>If you believe in sports, peace, and rebuilding Ukraine, you can support the continuation of this idea. Any form of financial help is welcome — including cryptocurrency.</p>
-
-    <div class="donate">
-      <h3>Crypto Support (TRC-20 USDT)</h3>
-      <p class="wallet" id="wallet">TKyKYS4udQL5NBBCQqtrC3mGQBMfmfEFpa</p>
-      <button class="btn-copy" onclick="copyWallet()">Copy Wallet Address</button>
+    <div class="images">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Aerials_at_Deer_Valley_2011.jpg" alt="Freestyle skiing ramp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Ukraine.svg" alt="Ukrainian flag">
     </div>
 
-    <p style="margin-top:2rem;">
-      More info and videos can be found on my YouTube channel <strong>Maksym Bilonizhko</strong> and via this article:
-      <a href="https://mixsport.pro/blog/pidtrimaj-nas-proekt-ta-rozvitok-fristajlu-v-ukraini" target="_blank">Read the article</a>
-    </p>
+    <div class="donate">
+      <h2>Support Us</h2>
+      <p>Send TRC20 donations to the wallet below:</p>
+      <div class="wallet">TKyKYS4udQL5NBBCQqtrC3mGQBMfmfEFpa</div>
+      <button class="donate-btn" onclick="navigator.clipboard.writeText('TKyKYS4udQL5NBBCQqtrC3mGQBMfmfEFpa'); alert('Wallet copied!')">Donate Now</button>
+    </div>
   </section>
+
   <footer>
-    &copy; 2025 Maksym Bilonizhko. Project for peace, sport, and Ukraine.
+    &copy; 2025 Ukraine Freestyle Complex Project
   </footer>
 
-  <script>
-    function copyWallet() {
-      const wallet = document.getElementById("wallet").innerText;
-      navigator.clipboard.writeText(wallet).then(() => {
-        alert("Wallet address copied to clipboard");
-      });
-    }
-  </script>
 </body>
 </html>
